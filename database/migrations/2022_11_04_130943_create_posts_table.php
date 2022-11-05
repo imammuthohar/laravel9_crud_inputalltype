@@ -25,7 +25,7 @@ return new class extends Migration
             $table->string('agama');
             $table->string('email');
             $table->string('hobi');
-
+            $table->string('warna');
             $table->timestamps();
         });
     }

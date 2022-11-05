@@ -146,6 +146,12 @@
                             </div>
                             </div>
 
+                            <div class="form-group">    
+                                <label class="font-weight-bold" for="favcolor">Pilih Warna Favorit:</label>
+                                <input type="color" id="favcolor" name="warna" value="#ff0000">
+
+                            </div>
+
                             <button type="submit" class="btn btn-md btn-primary">SIMPAN</button>
                             <button type="reset" class="btn btn-md btn-warning">RESET</button>
 

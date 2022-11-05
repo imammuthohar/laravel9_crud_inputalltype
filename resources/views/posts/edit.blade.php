@@ -137,13 +137,19 @@
                             <div class="form-group">
                                 <label class="font-weight-bold">Hobi</label>
                                 <div class="form-check">
-                                <input name="hobi" class="btn-check" type="checkbox" value="Main Musik"> 
+                                <input name="hobi" class="btn-check" type="checkbox" value="Main Musik"  @if ($post->hobi=="Main Musik") checked  @endif > 
                                 <label for="">Main Musik</label>
                                 </div>
                                 <div class="form-check">
-                                <input name="hobi" class="btn-check" type="checkbox" value="Main Game"> 
+                                <input name="hobi" class="btn-check" type="checkbox" value="Main Game" @if ($post->hobi=="Main Game") checked  @endif> 
                                 <label for="">Main Game</label>
                             </div>
+                            </div>
+
+                            <div class="form-group">    
+                                <label class="font-weight-bold" for="favcolor">Pilih Warna Favorit:</label>
+                                <input type="color" id="favcolor" name="warna" value="{{ $post->warna }}">
+
                             </div>
 
                             <button type="submit" class="btn btn-md btn-primary">UPDATE</button>

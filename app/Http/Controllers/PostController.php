@@ -39,6 +39,7 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
+        //  dd($request ->all());
         // dd("jk");
         //validate form
         $this->validate($request, [
@@ -51,7 +52,8 @@ class PostController extends Controller
             'jeniskelamin'  => 'required|min:5',
             'agama'         => 'required|min:5',
             'email'         => 'required|min:5',
-            'hobi'          => 'required|min:5'
+            'hobi'          => 'required|min:5',
+            'warna'         => 'required|min:5'
         ]);
 
         //upload image
@@ -69,7 +71,9 @@ class PostController extends Controller
             'jeniskelamin'  => $request->jeniskelamin,
             'agama'         => $request->agama,
             'email'         => $request->email,
-            'hobi'          => $request ->hobi
+            'hobi'          => $request ->hobi,
+            'warna'         => $request ->warna
+
         ]);
 
         //redirect to index
@@ -95,7 +99,8 @@ class PostController extends Controller
             'jeniskelamin'  => 'required|min:5',
             'agama'         => 'required|min:5',
             'email'         => 'required|min:5',
-            'hobi'          => 'required|min:5'
+            'hobi'          => 'required|min:5',
+            'warna'         => 'required|min:5'
 
            
         ]);
@@ -121,7 +126,9 @@ class PostController extends Controller
             'jeniskelamin'  => $request->jeniskelamin,
             'agama'         => $request->agama,
             'email'         => $request->email,
-            'hobi'          => $request ->hobi
+            'hobi'          => $request ->hobi,
+            'warna'         => $request ->warna
+
             ]);
 
         } else {
@@ -136,7 +143,8 @@ class PostController extends Controller
             'jeniskelamin'  => $request->jeniskelamin,
             'agama'         => $request->agama,
             'email'         => $request->email,
-            'hobi'          => $request ->hobi
+            'hobi'          => $request ->hobi,
+            'warna'         => $request ->warna
             ]);
         }
 
