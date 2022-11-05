@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css">
 </head>
-<body style="background: lightgray">
+<body style="background: rgb(250, 247, 247)">
 
-    <div class="container mt-5">
+    <div class="container-fluid mt-5">
         <div class="row">
-            <div class="col-md-12">
+            <div class="col-lg-12">
                 <div class="card border-0 shadow rounded">
                     <div class="card-body">
                         <a href="{{ route('posts.create') }}" class="btn btn-md btn-success mb-3">TAMBAH POST</a>
