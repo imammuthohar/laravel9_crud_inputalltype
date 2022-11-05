@@ -50,7 +50,8 @@ class PostController extends Controller
             'alamat'        => 'required|min:5',
             'jeniskelamin'  => 'required|min:5',
             'agama'         => 'required|min:5',
-            'email'         => 'required|min:5'
+            'email'         => 'required|min:5',
+            'hobi'          => 'required|min:5'
         ]);
 
         //upload image
@@ -67,7 +68,8 @@ class PostController extends Controller
             'alamat'        => $request->alamat,
             'jeniskelamin'  => $request->jeniskelamin,
             'agama'         => $request->agama,
-            'email'         => $request->email
+            'email'         => $request->email,
+            'hobi'          => $request ->hobi
         ]);
 
         //redirect to index
@@ -92,7 +94,8 @@ class PostController extends Controller
             'alamat'        => 'required|min:5',
             'jeniskelamin'  => 'required|min:5',
             'agama'         => 'required|min:5',
-            'email'         => 'required|min:5'
+            'email'         => 'required|min:5',
+            'hobi'          => 'required|min:5'
 
            
         ]);
@@ -117,7 +120,8 @@ class PostController extends Controller
             'alamat'        => $request->alamat,
             'jeniskelamin'  => $request->jeniskelamin,
             'agama'         => $request->agama,
-            'email'         => $request->email
+            'email'         => $request->email,
+            'hobi'          => $request ->hobi
             ]);
 
         } else {
@@ -131,7 +135,8 @@ class PostController extends Controller
             'alamat'        => $request->alamat,
             'jeniskelamin'  => $request->jeniskelamin,
             'agama'         => $request->agama,
-            'email'         => $request->email
+            'email'         => $request->email,
+            'hobi'          => $request ->hobi
             ]);
         }
 

@@ -28,6 +28,7 @@
                                 <th scope="col">JK</th>
                                 <th scope="col">Agama</th>
                                 <th scope="col">Email</th>
+                                <th scope="col">Hobi</th>
                                 <th scope="col">Aksi</th>
                               </tr>
                             </thead>
@@ -44,7 +45,8 @@
                                     <td>{{ $post->alamat }}</td>
                                     <td>{{ $post->jeniskelamin }}</td>
                                     <td>{{ $post->agama }}</td>
-                                    <td>{{ $post->email }}</td> 
+                                    <td>{{ $post->email }}</td>
+                                    <td>{{ $post->hobi }}</td> 
                                     <td class="text-center">
                                         <form onsubmit="return confirm('Apakah Anda Yakin ?');" action="{{ route('posts.destroy', $post->id) }}" method="POST">
                                             <a href="{{ route('posts.edit', $post->id) }}" class="btn btn-sm btn-primary">EDIT</a>

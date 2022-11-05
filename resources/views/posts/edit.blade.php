@@ -134,6 +134,17 @@
                                     </div>
                                 @enderror
                             </div>
+                            <div class="form-group">
+                                <label class="font-weight-bold">Hobi</label>
+                                <div class="form-check">
+                                <input name="hobi" class="btn-check" type="checkbox" value="Main Musik"> 
+                                <label for="">Main Musik</label>
+                                </div>
+                                <div class="form-check">
+                                <input name="hobi" class="btn-check" type="checkbox" value="Main Game"> 
+                                <label for="">Main Game</label>
+                            </div>
+                            </div>
 
                             <button type="submit" class="btn btn-md btn-primary">UPDATE</button>
                             <button type="reset" class="btn btn-md btn-warning">RESET</button>

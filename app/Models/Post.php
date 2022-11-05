@@ -18,5 +18,6 @@ class Post extends Model
          'jeniskelamin',
          'agama',
          'email',
+         'hobi',
      ];
 }
