@@ -67,7 +67,7 @@
                             
                             <div class="form-group">
                                 <label class="font-weight-bold">Tanggal Lahir</label>
-                                <input type="date" class="form-control @error('agama') is-invalid @enderror" name="agama" value="{{ $post ->tanggallahir }}" >
+                                <input type="date" class="form-control @error('agama') is-invalid @enderror" name="tanggallahir" value="{{ $post ->tanggallahir }}" >
                             
                                 <!-- error message untuk title -->
                                 @error('agama')
@@ -101,7 +101,7 @@
                                 </label>
                               </div>
                               <div class="form-check">
-                                <input class="form-check-input" type="radio" name="Jeniskelamin" id="jeniskelamin" value="Perempuan" @if ( $post ->jeniskelamin=="Perempuan") checked @endif>
+                                <input class="form-check-input" type="radio" name="jeniskelamin" id="jeniskelamin" value="Perempuan" @if ( $post ->jeniskelamin=="Perempuan") checked @endif>
                                 <label class="form-check-label" for="jeniskelamin">
                                   Perempuan
                                 </label>

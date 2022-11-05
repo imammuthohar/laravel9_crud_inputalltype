@@ -81,9 +81,10 @@ class PostController extends Controller
     }
     public function update(Request $request, Post $post)
     {
+        // dd($request ->all());
        //validate form
         $this->validate($request, [
-            'image'         => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
+            // 'image'         => 'required|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
             'nama'          => 'required|min:1',
             'nis'           => 'required|min:2',
             'tempatlahir'   => 'required|min:5',
@@ -92,8 +93,10 @@ class PostController extends Controller
             'jeniskelamin'  => 'required|min:5',
             'agama'         => 'required|min:5',
             'email'         => 'required|min:5'
-        ]);
 
+           
+        ]);
+        
          //check if image is uploaded
          if ($request->hasFile('image')) {
 
@@ -136,6 +139,17 @@ class PostController extends Controller
         return redirect()->route('posts.index')->with(['success' => 'Data Berhasil Diubah!']);
 
     }
+    
+    public function destroy(Post $post)
+    {
+        //delete image
+        Storage::delete('public/posts/'. $post->image);
 
+        //delete post
+        $post->delete();
+
+        //redirect to index
+        return redirect()->route('posts.index')->with(['success' => 'Data Berhasil Dihapus!']);
+    }
 
 }
